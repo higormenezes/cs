@@ -9,7 +9,8 @@ int main (void) {
     printf("Number: ");
     scanf("%i", &n);
 
-    for (int i = 0; i < 7; i++) {
+    int length = sizeof(numbers) / sizeof(numbers[0]);
+    for (int i = 0; i < length; i++) {
         if (numbers[i] == n) {
             printf("Found\n");
             return 0;
