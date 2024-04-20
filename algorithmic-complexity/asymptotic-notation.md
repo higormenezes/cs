@@ -35,12 +35,15 @@ return -1
 
 ### $O(n)$
 
-Iterate an array of `n` elements.
+Linear search
 
 ```c
 for (int i = 0; i < n; i++) {
-    arr[i]
+    if (arr[i] === value) {
+        return i
+    }
 }
+return -1
 ```
 
 ### $O(nlog{_2}n)$
